@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <table border="2" style="margin-left: 30%;" id="table1"  >
+        <td style="padding: 20px;">
+
+         
+    
+    <form   id="userform">
+
+        <table style="text-align: center;">
+            <td style="padding-left: 55px;"  >  <input type="text" name="" id="" value="LOGIN FORM" style="text-align: center; padding: 20px;"> </td>
+        </table>
+
+
+        
+        
+        <br>
+        <br>
+    <label for=""> Name </label>
+
+    <input type="text"  id="fisrtname" placeholder="FisrtName">
+
+    <input type="text" name="LastName" id="lastname"  placeholder="LastName">
+
+    <br>
+    <br>
+    <label for="">Email</label>
+    <input type="text" name="Mail" id="mail" placeholder="Enter Email">
+
+
+    <br>
+    <br>
+    <label for="">Phone Number </label>
+    <input type="text" name="PhoneNumber" id="phonenumber"  maxlength="9" placeholder="Enter 10 digit  number" >
+
+    <br>
+    <br>
+    <label for="gender">Gender </label>
+    <br>
+    <input type="radio" name="Gender" id="gender" value="Male">Male
+    <br>
+    <input type="radio" name="Gender" id="gender" value="Female">Female
+
+
+    <br>
+    <br>
+    <label for="textarea">Address</label><br>
+    <textarea name="TextArea" id="textarea" cols="30" rows="10" ></textarea>
+
+
+    <br>
+    <br>
+    <label for="dob">Date of Birth</label><br>
+    <input type="date" name="DOB" id="dob">
+
+
+    <br>
+    <br>
+    <label for="time">Time</label><br>
+    <input type="time" name="Time" id="time">
+
+    <br>
+    <br>
+    <label for="languages">Languages</label> <br>
+    <input type="checkbox"  id="languages" value="Tamil">Tamil <br>
+    <input type="checkbox"  id="languages" value="English">English <br>
+    <input type="checkbox"  id="languages" value="French">French  <br>
+    <input type="checkbox"  id="languages" value="spanish">Spanish <br>
+
+
+
+    <br>
+    <br>
+    <label for="select feilds">Select your feild of intrest:  </label><br>
+
+
+    <select name="Feildofintrest" id="select_feilds" multiple >
+
+        <option  value="Music" >Music</option>
+        <option  value="Cycling" >FreCyclingnch</option>
+        <option  value="Badminton" >Badminton</option>
+        <option  value="Football" >Football</option>
+        <option  value="cricket" >cricket</option>
+    </select>
+
+
+    <br>
+    <br>
+    <label for="photo">Upload your photo</label><br>
+    <input type="file" name="ProfilePhoto" id="photo">
+
+    <br><br>
+
+    
+   
+    <input type="button" name="userform" onclick="takinginputs()" id="formsubmit" value="submit"> 
+    <input type="reset" name="userformreset" id="formreset" value="Reset">
+
+
+
+</form>
+
+</td>
+
+</table>
+
+
+
+
+
+
+
+<table border="3" style="margin-left: 30%; display: none;" id="table2" >
+    <tr>
+        <th>Section</th>
+        <th>USER DETAILS</th>
+    </tr>
+
+    <tr>
+        <th>FirstNAME</th>
+        <td ><span id="FirstNAME"> </span></td>
+    </tr>
+
+    <tr>
+        <th>LASTNAME</th>
+        <td ><span id="LASTNAME"> </span></td>
+    </tr>
+
+    <tr>
+        <th>EMAILID</th>
+        <td><span id="EMAILID"> </span></td>
+    </tr>
+
+    <tr>
+        <th>Phone Number</th>
+        <td ><span id="Phone_Number"> </span></td>
+    </tr>
+
+
+    <tr>
+        <th>GENDER</th>
+        <td><span id="GENDER"> </td>
+    </tr>
+
+    <tr>
+        <th>CURRENT ADDRESS</th>
+        <td><span id="CURRENT_ADDRESS"></span></td>
+    </tr>
+
+    <tr>
+        <th>DATE OF BIRTH</th>
+        <td><span id="DOb"></span></td>
+    </tr>
+
+    <tr>
+        <th>TIME</th>
+        <td><span id="Time"></span></td>
+    </tr>
+
+    <tr>
+        <th>Languages</th>
+        <td ><ul>
+                <li><span id="lang"></span></li>
+                <li><span id="lang"></span></li>
+                <li><span id="lang"></span></li>
+                <li><span id="lang"></span></li>
+            </ul>
+        </td>
+        
+    </tr>
+
+    <tr>
+        <th>FILED OF INTREST</th>
+
+        <td>
+                <ul>
+                    <li id="interest"></li>
+                    <li id="interest"></li>
+                    <li id="interest"></li>
+                    <li id="interest"></li>
+                </ul>
+        </td>
+    </tr>
+
+    <tr>
+        <th>UPLOAD YOUR PICTURE</th>
+
+        <td><img src="" alt="my image" height="15%" width="15%" id="PIC"></td>
+
+    </tr>
+
+
+
+</table>
+    
+</body>
+</html>
